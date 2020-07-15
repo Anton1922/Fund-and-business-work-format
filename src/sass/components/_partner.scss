@@ -1,0 +1,58 @@
+.work-format-partner {
+	position: relative;
+
+	&__title {
+		margin-bottom: 86px;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		padding: 0 0 55px;
+		max-width: 283px;
+		border: 1px solid #41e7c9;
+	}
+
+	&__container-icon {
+		position: relative;
+		display: inline-block;
+		margin: 35px auto 30px;
+
+		&--second {
+			margin-bottom: 65px;
+		}
+
+		&--third {
+			margin-bottom: 45px;
+		}
+	}
+	&__icon {
+
+		&-cat, &-gallery, &-dog {
+			position: absolute;
+		}
+
+		&-cat {
+			bottom: -30%;
+		}
+
+		&-cat, &-gallery {
+			right: -32%;
+		}
+
+		&-gallery {
+			bottom: -17%;
+		}
+
+		&-dog {
+			z-index: 100;
+			right: 16%;
+			bottom: -13%;
+		}
+	}
+}

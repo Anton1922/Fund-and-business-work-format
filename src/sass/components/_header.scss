@@ -1,0 +1,21 @@
+.work-format-header {
+	margin-bottom: 85px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.22;
+
+
+	&__title {
+		margin: 125px auto 35px;
+		font-weight: 500;
+		font-size: 64px;
+		text-align: center;
+	}
+
+	&__description {
+		margin: 0 auto;
+		max-width: 730px;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: center;
+	}
+}
