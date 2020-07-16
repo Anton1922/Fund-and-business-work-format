@@ -1,0 +1,33 @@
+.work-format-pr {
+	position: relative;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 80px;
+	}
+
+	&__card {
+		padding-bottom: 22px;
+	}
+
+	&__container-icon {
+		position: relative;
+		display: inline-block;
+		margin: 35px auto 30px;
+
+		&--last {
+			margin-top: 60px;
+		}
+	}
+
+	&__icon {
+
+		&-heart {
+			position: absolute;
+			left: 0;
+			top: -20%;
+		}
+	}
+		
+}
