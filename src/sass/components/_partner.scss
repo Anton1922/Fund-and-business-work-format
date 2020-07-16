@@ -11,11 +11,7 @@
 	}
 
 	&__card {
-		display: flex;
-		flex-direction: column;
 		padding: 0 0 55px;
-		max-width: 283px;
-		border: 1px solid #41e7c9;
 	}
 
 	&__container-icon {
@@ -29,6 +25,12 @@
 
 		&--third {
 			margin-bottom: 45px;
+		}
+
+		&-big {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 	&__icon {
@@ -55,4 +57,43 @@
 			bottom: -13%;
 		}
 	}
+
+	&__card-big {
+		margin: 20px auto 90px;
+		padding-bottom: 90px;
+		max-width: 630px;
+		border: 1px solid #41e7c9;
+	}
+
+	&__subtitle {
+		margin: 0 auto 30px;
+		text-align: center;
+	}
+
+	&__list {
+		max-width: 468px;
+		font-weight: 400;
+		font-size: 18px;
+
+		&-item {
+			position: relative;
+			margin-bottom: 25px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 5px;
+				left: -20px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #88f0dd;
+			}
+		}
+	}
+}
+
+ul.work-format-partner__list {
+	margin-left: 70px;
+	padding-left: 30px;
 }
