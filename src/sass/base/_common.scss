@@ -84,11 +84,6 @@ input[type=number] {
   text-align: left;
 }
 
-.work-format__text {
-  font-weight: 500;
-  font-size: 18px;
-}
-
 .work-format__number {
   position: absolute;
   left: 0;
@@ -98,11 +93,13 @@ input[type=number] {
   color: #41e7c9;
 }
 
-.business__button {
+.work-format__button {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  width: 385px;
+  height: 95px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -113,45 +110,17 @@ input[type=number] {
   color: #111111;
   background-color: #41e7c9;
 
-  @media screen and (max-width: 800px) {
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-  }
-
   &:hover {
     background-color: #3bbca4;
     color: #edeaea;
   }
+}
 
-  &--small {
-    width: 386px;
-    height: 85px;
-
-    @media screen and (max-width: 800px) {
-      width: 300px;
-    }
-
-    @media screen and (max-width: 360px) {
-      width: 250px;
-      height: 65px;
-    }
-  }
-
-  &--big {
-    width: 558px;
-    height: 96px;
-    text-transform: none;
-
-    @media screen and (max-width: 800px) {
-      width: 310px;
-    }
-
-    @media screen and (max-width: 360px) {
-      width: 270px;
-      height: 65px;
-    }
-  }
+.work-format__card {
+  display: flex;
+  flex-direction: column;
+  width: 283px;
+  border: 1px solid #41e7c9;
 }
 
 
