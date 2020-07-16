@@ -1,0 +1,31 @@
+.work-format-hr {
+	position: relative;
+
+	&__title {
+		margin-bottom: 80px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 80px;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&:nth-of-type(even) {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&__text {
+		max-width: 540px;
+
+		& span {
+			font-weight: 700;
+		}
+	}
+}
