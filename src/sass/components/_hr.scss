@@ -3,12 +3,36 @@
 
 	&__title {
 		margin-bottom: 80px;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 50px;
+		}
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__container {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 80px;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 50px;
+		}
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__content {
@@ -18,11 +42,34 @@
 
 		&:nth-of-type(even) {
 			flex-direction: row-reverse;
+			
+			@media screen and (max-width: 420px) {
+				flex-direction: column;
+			}
+		}
+
+		&:not(:last-child) {
+			@media screen and (max-width: 500px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@media screen and (max-width: 420px) {
+			flex-direction: column;
 		}
 	}
 
 	&__text {
 		max-width: 540px;
+
+		@media screen and (max-width: 500px) {
+			max-width: 50%;
+			font-size: 16px;
+		}
+
+		@media screen and (max-width: 420px) {
+			max-width: 100%;
+		}
 
 		& span {
 			font-weight: 700;

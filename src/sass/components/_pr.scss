@@ -1,24 +1,71 @@
 .work-format-pr {
 	position: relative;
 
+	&__title {
+		margin-bottom: 80px;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 50px;
+		}
+
+		@media screen and (max-width: 800px) {
+			margin-bottom: 40px;
+		}
+	}
+
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 80px;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 55px;
+			flex-wrap: wrap;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 		padding-bottom: 22px;
+
+		&:nth-child(1), &:nth-child(2) {
+			@media screen and (max-width: 1025px) {
+				margin-bottom: 20px;
+			}
+
+			@media screen and (max-width: 800px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@media screen and (max-width: 1025px) {
+			width: calc(50% - 10px);
+		}
+
+		@media screen and (max-width: 800px) {
+			width: calc(50% - 5px);
+		}
+
+		@media screen and (max-width: 500px) {
+			margin-bottom: 10px;
+	    width: 100%;
+	  }
 	}
 
 	&__container-icon {
 		position: relative;
 		display: inline-block;
 		margin: 35px auto 30px;
-
-		&--last {
-			margin-top: 60px;
-		}
 	}
 
 	&__icon {
@@ -28,6 +75,10 @@
 			left: 0;
 			top: -20%;
 		}
+	}
+
+	&__icon:not(.work-format-pr__icon-heart) {
+		height: 140px;
 	}
 		
 }

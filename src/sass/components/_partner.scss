@@ -3,15 +3,56 @@
 
 	&__title {
 		margin-bottom: 86px;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 58px;
+	  }
+
+	  @media screen and (max-width: 800px) {
+			margin-bottom: 44px;
+	  }
+
+	  @media screen and (max-width: 500px) {
+			margin-bottom: 25px;
+	  }
 	}
 
 	&__container {
 		display: flex;
 		justify-content: space-between;
+
+		@media screen and (max-width: 1025px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__card {
-		padding: 0 0 55px;
+		padding-bottom: 55px;
+
+		&:nth-child(1), &:nth-child(2) {
+
+			@media screen and (max-width: 1025px) {
+				margin-bottom: 20px;
+			}
+
+			@media screen and (max-width: 800px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@media screen and (max-width: 1025px) {
+			width: calc(50% - 10px);
+		}
+
+		@media screen and (max-width: 800px) {
+			padding-bottom: 35px;
+			width: calc(50% - 5px);
+		}
+
+		@media screen and (max-width: 500px) {
+			margin-bottom: 10px;
+	    width: 100%;
+	  }
 	}
 
 	&__container-icon {
@@ -31,6 +72,10 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			@media screen and (max-width: 360px) {
+				flex-direction: column;
+		  }
 		}
 	}
 	&__icon {
@@ -56,6 +101,13 @@
 			right: 16%;
 			bottom: -13%;
 		}
+
+		&-food, &-cosmetics {
+
+			@media screen and (max-width: 360px) {
+				display: none;
+		  }
+		}
 	}
 
 	&__card-big {
@@ -63,6 +115,23 @@
 		padding-bottom: 90px;
 		max-width: 630px;
 		border: 1px solid #41e7c9;
+
+		@media screen and (max-width: 1025px) {
+			margin-bottom: 60px;
+			padding-bottom: 60px;
+	  }
+
+		@media screen and (max-width: 800px) {
+			margin: 10px auto 45px;
+			margin-top: 10px;
+			padding-bottom: 45px;
+			max-width: 100%;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin: 0 auto 45px;
+			padding-bottom: 20px;
+	  }
 	}
 
 	&__subtitle {
@@ -74,6 +143,10 @@
 		max-width: 468px;
 		font-weight: 400;
 		font-size: 18px;
+
+		@media screen and (max-width: 500px) {
+			font-size: 16px;
+	  }
 
 		&-item {
 			position: relative;
@@ -96,4 +169,13 @@
 ul.work-format-partner__list {
 	margin-left: 70px;
 	padding-left: 30px;
+
+	@media screen and (max-width: 800px) {
+		margin-left: 40px;
+	}
+
+	@media screen and (max-width: 500px) {
+		margin-left: 0;
+		padding-right: 5px;
+	}
 }
